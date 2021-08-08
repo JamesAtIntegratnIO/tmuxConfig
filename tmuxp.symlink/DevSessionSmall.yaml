@@ -1,0 +1,13 @@
+session_name: DevSession-Small
+windows:
+- focus: 'true'
+  layout: b69f,208x50,0,0{77x50,0,0[77x25,0,0,0,77x24,0,26,2],130x50,78,0,1}
+  options: {}
+  panes:
+  - blank
+  - blank
+  - shell_command:
+    - vim
+    focus: 'true'
+  start_directory: "${PWD}"
+  window_name: Main

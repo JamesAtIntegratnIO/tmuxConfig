@@ -1,0 +1,16 @@
+session_name: DevSession
+windows:
+- focus: 'true'
+  layout: 01d9,418x103,0,0{115x103,0,0[115x26,0,0,0,115x48,0,27,3,115x27,0,76,4],170x103,116,0,1,131x103,287,0[131x51,287,0,2,131x51,287,52,5]}
+  options: {}
+  panes:
+  - htop
+  - blank
+  - blank
+  - shell_command:
+    - vim
+    focus: 'true' 
+  - vim
+  - blank
+  start_directory: "${PWD}"
+  window_name: Main
