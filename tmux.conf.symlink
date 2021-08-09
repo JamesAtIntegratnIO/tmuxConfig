@@ -1,14 +1,17 @@
 # ~/.tmux.conf
-
+set -g default-terminal 'tmux-256color'
+set -as terminal-overrides ',xterm*:Tc:sitm=\E[3m'
 # unbind default prefix and set it to ctrl-a
 unbind C-b
 set -g prefix C-a
 bind C-a send-prefix
 
+# Plugins
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-yank'
+
 # make delay shorter
 set -sg escape-time 0
-
-
 
 #### key bindings ####
 
