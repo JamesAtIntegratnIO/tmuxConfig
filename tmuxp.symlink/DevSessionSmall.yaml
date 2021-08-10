@@ -6,8 +6,10 @@ windows:
   panes:
   - blank
   - blank
-  - shell_command:
-    - vim
-    focus: 'true'
+  - vim
   start_directory: "${PWD}"
   window_name: Main
+- window_name: BigTerm
+  options: {}
+  panes:
+  - blank
