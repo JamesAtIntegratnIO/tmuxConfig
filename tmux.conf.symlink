@@ -30,6 +30,8 @@ bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 
+
+
 # enable mouse support for switching panes/windows
 set -g mouse on
 
@@ -43,7 +45,9 @@ unbind [
 bind Escape copy-mode
 
 # start selection with 'space' and copy using 'y'
-bind -Tcopy-mode-vi v send -X begin-selection
+bind -Tcopy-mode-vi 'v' send -X begin-selection
+bind-key -Tcopy-mode-vi 'y' send -X copy-selection
 # paste using 'p'
 unbind p
 bind p paste-buffer
+
